@@ -1,4 +1,4 @@
-FROM atf.intranet.bb.com.br:5001/node:8
+FROM node:12
 
 WORKDIR /usr/src/app
 
