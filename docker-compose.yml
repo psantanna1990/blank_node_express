@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+
+  ath-app-integracao:
+    container_name: ath-app-integracao
+    build: .
+    ports:
+      - 5000:5000
+    links:
+      - sidecar
+    volumes:
+      - ./:/usr/src/app
+
+networks:
+  default:
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.6.0/24

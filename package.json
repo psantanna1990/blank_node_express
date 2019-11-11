@@ -1,0 +1,32 @@
+{
+  "name": "blank_node_express",
+  "version": "0.0.1",
+  "description": "Blank Project Node Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "lint": "./node_modules/.bin/eslint ./src/** --fix",
+    "secure-mode": "./node_modules/.bin/jest --watchAll --verbose=true",
+    "debug": "node --inspect src/index.js"
+  },
+  "keywords": [
+    "integracao",
+    "integracao motor"
+  ],
+  "author": "psantanna",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "consign": "0.1.6",
+    "dotenv": "^7.0.0",
+    "express": "4.16.3",
+    "request": "2.88.0",
+    "bunyan": "^1.8.12"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
