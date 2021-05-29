@@ -1,2 +1,5 @@
 node_modules
 logs
+logs/logs-info.json
+logs/logs-error.json
+logs/logs-warn.json
