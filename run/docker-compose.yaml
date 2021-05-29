@@ -1,0 +1,28 @@
+version: "3"
+services:
+###############################################################################
+# Api - Node Aplication
+###############################################################################
+  teste:
+    image: blank-api
+    build:
+      context: ../
+      dockerfile: ./Dockerfile
+    command: "npm run dev"
+    # depends_on:
+    # - mongo
+    networks:
+      - blank-network
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../:/app
+    environment:
+      TZ: America/Sao_Paulo
+      API_PORT: 3000
+      APP_HOST: "localhost:3000"
+
+networks:
+    blank-network:
+        driver: bridge
+    
