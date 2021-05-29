@@ -1,7 +1,7 @@
 const bunyan = require("bunyan");
 
 var bunyanOpts = {
-    name: "SONAR ANALISE API",
+    name: "Blank Project",
     streams: [
         {
             level: "debug",
